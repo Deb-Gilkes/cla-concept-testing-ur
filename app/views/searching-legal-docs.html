@@ -1,0 +1,83 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="Search for a legal document" %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <a href="index.html" class="govuk-back-link">Back</a>
+
+    <h1 class="govuk-heading-xl">Search by a legal document</h1>
+
+<body class="govuk-template__body app-example-page js-enabled">
+  <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+  <!-- Disable browser validation for any examples that include form elements -->
+  <form action="/form-handler" method="post" novalidate="">
+    
+      
+
+<div class="govuk-form-group">
+<label class="govuk-label" for="government-department">
+  Legal document
+</label>
+<div role="combobox" aria-owns="government-department" aria-haspopup="listbox" aria-expanded="false" class="govuk-select__wrapper">
+  <input type="text" id="government-department" class="govuk-input govuk-select__input" autocomplete="off" name="governmentDepartment" aria-autocomplete="list" aria-controls="government-department-listbox">
+  <div class="govuk-select__drop-down-arrow"></div>
+  <ul id="government-department-listbox" hidden="" class="govuk-select__option-list" role="listbox"></ul>
+</div>
+<select class="govuk-select" id="government-department-select" name="governmentDepartment" data-module="govuk-select" style="display: none;">
+    <option value=""></option>
+    <option value="1">Prime Minister's Office, 10 Downing Street</option>
+    <option value="2" data-synonyms="CO">Cabinet Office</option>
+    <option value="3" data-synonyms="BEIS">Department for Business, Energy &amp; Industrial Strategy</option>
+    <option value="4" data-synonyms="DCMS">Department for Digital, Culture, Media &amp; Sport</option>
+    <option value="5" data-synonyms="DfE">Department for Education</option>
+    <option value="6" data-synonyms="DEFRA">Department for Environment Food &amp; Rural Affairs</option>
+    <option value="7" data-synonyms="DIT">Department for International Trade</option>
+    <option value="8" data-synonyms="DLUHC|MHCLG|Ministry for Housing, Communities and Local Government">Department for Levelling Up, Housing &amp; Communities</option>
+    <option value="9" data-synonyms="DfT">Department for Transport</option>
+    <option value="10" data-synonyms="DWP|Department for Work and Pensions">Department for Work &amp; Pensions</option>
+    <option value="11" data-synonyms="DHSC">Department of Health &amp; Social Care</option>
+    <option value="12" data-synonyms="FCDO|FCO">Foreign, Commonwealth &amp; Development Office</option>
+    <option value="13" data-synonyms="HMT">HM Treasury</option>
+    <option value="14" data-synonyms="HO">Home Office</option>
+    <option value="15" data-synonyms="MOD">Ministry of Defence</option>
+    <option value="16" data-synonyms="MOJ">Ministry of Justice</option>
+    <option value="17">Northern Ireland Office</option>
+    <option value="18">HM Land Registry</option>
+    <option value="19" data-synonyms="HMRC">HM Revenue &amp; Customs</option>
+    <option value="20">The Charity Commission</option>
+    <option value="21" data-synonyms="CMA">Competition and Markets Authority</option>
+    <option value="22" data-synonyms="FSA">Food Standards Agency</option>
+    <option value="23">Forestry Commission</option>
+    <option value="24" data-synonyms="ORR">Office of Rail and Road</option>
+    <option value="25">Ofgem</option>
+    <option value="26">Ofqual</option>
+    <option value="27">Ofsted</option>
+</select>
+</div>
+
+<a href="free-text-entry.html" class="govuk-button">Continue</a>
+    
+{% block pageScripts %}
+
+  <script src="/javascripts/vendor/iframeResizer.contentWindow.js"></script>
+  <script src="/javascripts/govuk-frontend-e806d3a2c8879d6de8c1da9933509428.js"></script>
+  <script src="/javascripts/example-9c3169e4fadb985206ba331be236abd9.js"></script>
+  {% endblock %}
+
+
+
+</div>
+
+
+   
+  
+  </div>
+
+  
+</div>
+
+{% endblock %}
