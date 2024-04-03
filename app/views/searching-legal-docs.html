@@ -7,10 +7,11 @@
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
 
-    <a href="index.html" class="govuk-back-link">Back</a>
-
-    <h1 class="govuk-heading-xl">Search by a legal document</h1>
-
+    <a href="front-door.html" class="govuk-back-link">Back</a>
+    <h1 class="govuk-heading-xl">Search for your legal document</h1>
+    <p class="govuk-template__body">Start typing the name or number and select from the list.
+    </p>
+    <div class="govuk-!-padding-bottom-5"></div>
 <body class="govuk-template__body app-example-page js-enabled">
   <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
   <!-- Disable browser validation for any examples that include form elements -->
@@ -24,38 +25,58 @@
     </label>
     <select class="govuk-select" id="government-department-select" name="governmentDepartment" data-module="govuk-select" style="display: none;">
         <option value=""></option>
-        <option value="1">Prime Minister's Office, 10 Downing Street</option>
-        <option value="2" data-synonyms="CO">Cabinet Office</option>
-        <option value="3" data-synonyms="BEIS">Department for Business, Energy &amp; Industrial Strategy</option>
-        <option value="4" data-synonyms="DCMS">Department for Digital, Culture, Media &amp; Sport</option>
-        <option value="5" data-synonyms="DfE">Department for Education</option>
-        <option value="6" data-synonyms="DEFRA">Department for Environment Food &amp; Rural Affairs</option>
-        <option value="7" data-synonyms="DIT">Department for International Trade</option>
-        <option value="8" data-synonyms="DLUHC|MHCLG|Ministry for Housing, Communities and Local Government">Department for Levelling Up, Housing &amp; Communities</option>
-        <option value="9" data-synonyms="DfT">Department for Transport</option>
-        <option value="10" data-synonyms="DWP|Department for Work and Pensions">Department for Work &amp; Pensions</option>
-        <option value="11" data-synonyms="DHSC">Department of Health &amp; Social Care</option>
-        <option value="12" data-synonyms="FCDO|FCO">Foreign, Commonwealth &amp; Development Office</option>
-        <option value="13" data-synonyms="HMT">HM Treasury</option>
-        <option value="14" data-synonyms="HO">Home Office</option>
-        <option value="15" data-synonyms="MOD">Ministry of Defence</option>
-        <option value="16" data-synonyms="MOJ">Ministry of Justice</option>
-        <option value="17">Northern Ireland Office</option>
-        <option value="18">HM Land Registry</option>
-        <option value="19" data-synonyms="HMRC">HM Revenue &amp; Customs</option>
-        <option value="20">The Charity Commission</option>
-        <option value="21" data-synonyms="CMA">Competition and Markets Authority</option>
-        <option value="22" data-synonyms="FSA">Food Standards Agency</option>
-        <option value="23">Forestry Commission</option>
-        <option value="24" data-synonyms="ORR">Office of Rail and Road</option>
-        <option value="25">Ofgem</option>
-        <option value="26">Ofqual</option>
-        <option value="27">Ofsted</option>
+        <option value="1">Warrant of possession
+        </strong></option>
+        <option value="2" data-synonyms="CO">Claim form N1</option>
+        <option value="3" data-synonyms="BEIS">Backruptcy petition, Bank 1</option>
+        <option value="4" data-synonyms="DCMS">Statutory demand, Form SD2</option>
+        <option value="6" data-synonyms="DEFRA">Eviction - Letter before action, letter of claim, letter before claim (LBC)</option>
+        <option value="7" data-synonyms="DIT">Notice to quit</option>
+        <option value="8" data-synonyms="DLUHC|MHCLG|Ministry for Housing, Communities and Local Government">Notice from the landlord</option>
+        <option value="9" data-synonyms="s21">Section 21</option>
+        <option value="10" data-synonyms="DWP|Department for Work and Pensions">Section 8</option>
+        <option value="11" data-synonyms="DHSC">Part 1 of Notice Seeking Possesson (Section 83)</option>
+        <option value="12" data-synonyms="FCDO|FCO">Part 2 Notice of Seeking Termination of Tenancy and Recovery of Possession, (Section 83)
+        </option>
+        <option value="13" data-synonyms="HMT">Possession order, Form 6A</option>
+        <option value="14" data-synonyms="HO">Warrant for eviction, Form N54</option>
+        <option value="15" data-synonyms="MOD">Possession proceedings</option>
+        <option value="16" data-synonyms="MOJ">Defence form, Form N11R</option>
+        <option value="17">Charging order, Form N379</option>
+        <option value="18">Letter from counil to say you do not qualify for accommodation</option>
+        <option value="19" data-synonyms="HMRC">Closure order</option>
+        <option value="20">Injunction, N16A</option>
+        <option value="21" data-synonyms="CMA">Restraining order</option>
+        <option value="22" data-synonyms="FSA">Civil injunction</option>
+        <option value="23">Community Protection Notice (CPN)</option>
+        <option value="24" data-synonyms="ORR">Criminal Behaviour Order (CBO)</option>
+        <option value="25">Disability discrimination claim by a parent, Form SEND4A</option>
+        <option value="26">Disability discrimination claim by Young Person, Form SEND4B</option>
+        <option value="27">Application for Permission to Appeal, Form SEND20A</option>
+        <option value="28">Application for review, Form SEND20B</option>
+        <option value="29">Application to set aside final decision, Form SEND20C</option>
+        <option value="30">EHC Appeals Working Document, Form SEND23</option>
+        <option value="31">Disability discrimination claim after permanent exclusion by a parent, Form SEND26A</option>
+        <option value="32">Disability discrimination claim after permanent exclusion by a young person, Form SEND26B</option>
+        <option value="33">Appeal form for a child detained in youth accommodation, SEND28</option>
+        <option value="34">Appeal form for a young person detained in youth accommodation, SEND28A</option>
+        <option value="35">Special Educational Needs and Disability Tribunal appeal, Form SEND35</option>
+        <option value="36">Special Educational Needs and Disability Tribunal appeal a refusal to secure an EHC Needs Assessment, Form SEND35a</option>
+        <option value="37">Discrimination - Letter before action, letter of claim, letter before claim (LBC)</option>
+        <option value="38">Claim form</option>
+        <option value="39">Defence form, Form N11</option>
+        <option value="40">Early conciliation certificate (ECC) (from ACAS)</option>
+        <option value="41">Claim form for the Employment Tribunal, Form ET1</option>
     </select>
   </div>
 
-  <a href="free-text-entry.html" class="govuk-button">Continue</a>
-  
+ <div> <button type="submit" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+  I cannot find my document
+</button></div>
+    <a href="free-text-entry.html" class="govuk-button">Go to next concept</a>
+ 
+
+
 </div>
 
 {% endblock %}
